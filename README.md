@@ -100,8 +100,8 @@ The performance tests are implemented in Python using Locust. Here's a descripti
     *   It logs all requests (successful and failed) to a CSV file.
     *   It uses logging to track errors during the execution.
     *   **Execution parameters:**
-        *   `locust -f create_user_post.py --users 150 --web-port=8090 --spawn-rate 0 --run-time 60m` (for concurrency test with 150 users)
-        *   `locust -f create_user_post.py --users 50 --web-port=8090 --spawn-rate 0 --run-time 30m` (for a more stable test with 50 users)
+        *   `locust -f create_user_post.py --users 150 --web-port=8090 --spawn-rate 0 --run-time 60m` (for concurrency test with 150 users)  
+        *   `locust -f create_user_post.py --users 50 --web-port=8090 --spawn-rate 0 --run-time 30m` (for a more stable test with 50 users)  
 
 ### `find_pet_by_id_get.py`
 
@@ -110,11 +110,11 @@ The performance tests are implemented in Python using Locust. Here's a descripti
     *   It sends GET requests to the specified endpoint and logs the request date, time, status code, response size, response time and no parameters applied
     *   It logs all requests (successful and failed) to a CSV file.
     *   It uses logging to track any errors during the execution.
-     *   **Execution parameters:**
-        *   `locust -f find_pet_by_id_get.py --users 1 --web-port=8090 --spawn-rate 1 --run-time 30m` (Exploratory test with 1 user)
-        *   `locust -f find_pet_by_id_get.py --users 50 --web-port=8090 --spawn-rate 0.16 --run-time 15m` (Load Test with 50 users)
-        *  `locust -f find_pet_by_id_get.py --users 150 --web-port=8090 --spawn-rate 0.5 --run-time 15m` (Load Test with 150 users)
-        * `locust -f find_pet_by_id_get.py --users 500 --web-port=8090 --spawn-rate 0.55 --run-time 30m` (Load Test with 500 users)
+     *   **Execution parameters:**  
+        *   `locust -f find_pet_by_id_get.py --users 1 --web-port=8090 --spawn-rate 1 --run-time 30m` (Exploratory test with 1 user)  
+        *   `locust -f find_pet_by_id_get.py --users 50 --web-port=8090 --spawn-rate 0.16 --run-time 15m` (Load Test with 50 users)  
+        *   `locust -f find_pet_by_id_get.py --users 150 --web-port=8090 --spawn-rate 0.5 --run-time 15m` (Load Test with 150 users)  
+        *   `locust -f find_pet_by_id_get.py --users 500 --web-port=8090 --spawn-rate 0.55 --run-time 30m` (Load Test with 500 users)  
 
 ## Future Enhancements
 
